@@ -1,87 +1,7 @@
-//******************************************************************************
-// THIS PROGRAM IS PROVIDED "AS IS". TI MAKES NO WARRANTIES OR
-// REPRESENTATIONS, EITHER EXPRESS, IMPLIED OR STATUTORY,
-// INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS
-// FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, ACCURACY OR
-// COMPLETENESS OF RESPONSES, RESULTS AND LACK OF NEGLIGENCE.
-// TI DISCLAIMS ANY WARRANTY OF TITLE, QUIET ENJOYMENT, QUIET
-// POSSESSION, AND NON-INFRINGEMENT OF ANY THIRD PARTY
-// INTELLECTUAL PROPERTY RIGHTS WITH REGARD TO THE PROGRAM OR
-// YOUR USE OF THE PROGRAM.
-//
-// IN NO EVENT SHALL TI BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
-// CONSEQUENTIAL OR INDIRECT DAMAGES, HOWEVER CAUSED, ON ANY
-// THEORY OF LIABILITY AND WHETHER OR NOT TI HAS BEEN ADVISED
-// OF THE POSSIBILITY OF SUCH DAMAGES, ARISING IN ANY WAY OUT
-// OF THIS AGREEMENT, THE PROGRAM, OR YOUR USE OF THE PROGRAM.
-// EXCLUDED DAMAGES INCLUDE, BUT ARE NOT LIMITED TO, COST OF
-// REMOVAL OR REINSTALLATION, COMPUTER TIME, LABOR COSTS, LOSS
-// OF GOODWILL, LOSS OF PROFITS, LOSS OF SAVINGS, OR LOSS OF
-// USE OR INTERRUPTION OF BUSINESS. IN NO EVENT WILL TI'S
-// AGGREGATE LIABILITY UNDER THIS AGREEMENT OR ARISING OUT OF
-// YOUR USE OF THE PROGRAM EXCEED FIVE HUNDRED DOLLARS
-// (U.S.$500).
-//
-// Unless otherwise stated, the Program written and copyrighted
-// by Texas Instruments is distributed as "freeware".  You may,
-// only under TI's copyright in the Program, use and modify the
-// Program without any charge or restriction.  You may
-// distribute to third parties, provided that you transfer a
-// copy of this license to the third party and the third party
-// agrees to these terms by its first use of the Program. You
-// must reproduce the copyright notice and any other legend of
-// ownership on each copy or partial copy, of the Program.
-//
-// You acknowledge and agree that the Program contains
-// copyrighted material, trade secrets and other TI proprietary
-// information and is protected by copyright laws,
-// international copyright treaties, and trade secret laws, as
-// well as other intellectual property laws.  To protect TI's
-// rights in the Program, you agree not to decompile, reverse
-// engineer, disassemble or otherwise translate any object code
-// versions of the Program to a human-readable form.  You agree
-// that in no event will you alter, remove or destroy any
-// copyright notice included in the Program.  TI reserves all
-// rights not specifically granted under this license. Except
-// as specifically provided herein, nothing in this agreement
-// shall be construed as conferring by implication, estoppel,
-// or otherwise, upon you, any license or other right under any
-// TI patents, copyrights or trade secrets.
-//
-// You may not use the Program in non-TI devices.
-//
-//******************************************************************************
-//  eZ430-RF2500-SEH Temperature Sensor Access Point using Cymbet Solar Energy
-//  Harvesting Board
-//
-//  Description:
-//      This is the Access Point software for the eZ430-RF2500-SEH Temperature
-//      Sensing demo when hooked up to a Cymbet solar Energy Harvester board.
-//
-//      The Energy Harvester Access Point samples its local temperature and
-//      voltage and listens to any incoming End Device connections.
-//
-//      This firmware is based off of Texas Instrument's SimpliciTI network
-//      protocol version 1.06.
-//
-// W. Goh
-// Version 1.5
-// Texas Instruments, Inc
-// March 2009
-// Built with IAR Embedded Workbench Version: 4.11B
-// Built with Code Composer Essentials Version: v3.1 build 3.2.3.6.4
-//******************************************************************************
-// Change Log:
-//******************************************************************************
-// Version:  1.50
-// Comments: Fixed an un-initialized bug inside SimpliciTI
-// Version:  1.40
-//           Application files now compiles on both IAR and CCE
-// Version:  1.30
-// Comments: Initial public release
-// Version:  1.00 using Simpliciti ver 1.06
-// Comments: Initial Release Version
-//******************************************************************************
+// AP_all_sensors_transmit_data.c
+// Recieve data from ED and display through COM port.
+// 18/09/2015
+// use with corresponding ED
 
 #include "bsp.h"
 #include "mrfi.h"
@@ -95,7 +15,7 @@
 #include "msp430x22x4.h"
 #include "vlo_rand.h"
 
-#define MESSAGE_LENGTH 3
+#define MESSAGE_LENGTH		19	// must be less than or equal to MAX_APP_PAYLOAD	//
 void TXString( char* string, int length );
 void MCU_Init(void);
 void transmitData(int addr, signed char rssi,  char msg[MESSAGE_LENGTH] );
@@ -198,68 +118,7 @@ void main (void)
     // if it is time to measure our own temperature...
     if(sSelfMeasureSem)
     {
-      char msg [7];
-      char addr[] = {"HUB0"};
-      char rssi[] = {"000"};
-      int degC, volt;
-      volatile long temp;
-      int results[2];
-      int *tempOffset;                      // Initialize temperature offset
-      tempOffset = (int *)0x10F4;           // coefficient
-
-      ADC10CTL1 = INCH_10 + ADC10DIV_4;     // Temp Sensor ADC10CLK/5
-      ADC10CTL0 = SREF_1 + ADC10SHT_3 + REFON + ADC10ON + ADC10IE + ADC10SR;
-      __delay_cycles(250);                  // delay to allow reference to settle      ADC10CTL0 |= ENC + ADC10SC;           // Sampling and conversion start
-      ADC10CTL0 |= ENC + ADC10SC;           // Sampling and conversion start
-      __bis_SR_register(CPUOFF + GIE);      // LPM0 with interrupts enabled
-      results[0] = ADC10MEM;
-
-      ADC10CTL0 &= ~ENC;
-
-      ADC10CTL1 = INCH_11;                  // AVcc/2
-      ADC10CTL0 = SREF_1 + ADC10SHT_2 + REFON + ADC10ON + ADC10IE + REF2_5V;
-      __delay_cycles(250);                  // delay to allow reference to settle      ADC10CTL0 |= ENC + ADC10SC;           // Sampling and conversion start
-      ADC10CTL0 |= ENC + ADC10SC;           // Sampling and conversion start
-      __bis_SR_register(CPUOFF + GIE);      // LPM0 with interrupts enabled
-      results[1] = ADC10MEM;
-      ADC10CTL0 &= ~ENC;
-      ADC10CTL0 &= ~(REFON + ADC10ON);      // turn off A/D to save power
-
-      // Collect VCC Sample
-      temp = results[1];
-      volt = (temp*25)/512;
-
-      // oC = ((A10/1024)*1500mV)-986mV)*1/3.55mV = A10*423/1024 - 278
-      // the temperature is transmitted as an integer where 32.1 = 321
-      // hence 4230 instead of 423
-      temp = results[0];
-      degC = ((temp * 4230) / 1024) - 2780;
-      if( *tempOffset != 0xFFFF )
-        degC += *tempOffset;
-
-      // Moving window of samples
-      temperature[0] = temperature[1];
-      temperature[1] = temperature[2];
-      temperature[2] = temperature[3];
-      temperature[3] = degC;
-
-      // If the low-pass filter buffer is not yet full, do not send data to AP
-      if(temperature[0] != 0)
-      {
-        // Average the last 4 samples
-        temp = temperature[0] + temperature[1] + temperature[2] + temperature[3];
-        temp = temp >> 2;                   // Divide by 4
-
-        // Load the message
-        msg[0] = temp&0xFF;
-        msg[1] = (temp>>8)&0xFF;
-        msg[2] = volt;
-        msg[4] = 0;
-        msg[5] = 0;
-				msg[6] = 0;
-        transmitDataString(addr, rssi, msg );
-      }
-
+//    	TXString("\r\n...", 5);
       BSP_TOGGLE_LED1();
       sSelfMeasureSem = 0;
     }
@@ -268,7 +127,7 @@ void main (void)
     // No critical section -- it doesn't really matter much if we miss a poll
     if (sPeerFrameSem)
     {
-      uint8_t     msg[MAX_APP_PAYLOAD], len, i;
+    	  uint8_t  msg[MESSAGE_LENGTH], len, i;
 
       // process all frames waiting
       for (i=0; i<sNumCurrentPeers; ++i)
@@ -355,82 +214,347 @@ void transmitData(int addr, signed char rssi,  char msg[MESSAGE_LENGTH] )
 *******************************************************************************/
 void transmitDataString(char addr[4],char rssi[3], char msg[MESSAGE_LENGTH] )
 {
-  char temp_string[] = {" XX.XC"};
 
-  int temp = msg[0] + (msg[1]<<8);
-  int tcnt=msg[4] + (msg[5]<<8);
-  if( !degCMode )
-  {
-    temp = (int) ((((float)temp)*1.8)+320);
-    temp_string[5] = 'F';
-  }
-  if( temp < 0 )
-  {
-    temp_string[0] = '-';
-    temp = temp * -1;
-  }
-  else if( ((temp/1000)%10) != 0 )
-  {
-    temp_string[0] = '0'+((temp/1000)%10);
-  }
-  temp_string[4] = '0'+(temp%10);
-  temp_string[2] = '0'+((temp/10)%10);
-  temp_string[1] = '0'+((temp/100)%10);
+	char output[] = {"ID=XXX.X,Vcc=X.XXX,T=XXX.XX,RH=XX.XX,Acc_x=XXXXX.XX,Acc_y=XXXXX.XX,Acc_z=XXXXX.XX,P=XXXX.XX,Vpd=XXXX.X,status=XXXXXXXX.X\r\n"};
+	//				  0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+	//				  0         1         2         3         4         5         6         7         8         1         2         3         4
 
-  if( verboseMode )
-  {
-    char output_verbose[] = {"\r\nNode:XXXX,Temp:-XX.XC,Battery:X.XV,Strength:XXX%,RE:XXXXXXX "};
+	char id_string[] = {"YYY.0"};		// add '0' so that python can read it (for some reason only reads floats, not ints)
+	char vcc_string[] = {"Y.YYY"};
+	char t_string[] = {"YYY.YY"};
+	char rh_string[] = {"YY.YY"};
+	char acc_x_string[] = {"YYYYY.00"};
+	char acc_y_string[] = {"YYYYY.00"};
+	char acc_z_string[] = {"YYYYY.00"};
+	char p_string[] = {"YYYY.YY"};
+	char status_string[] = {"bbbbbbbb.0"};
+	char vpd_string[] = {"XXXX.0"};
+	int i,j;
 
-    output_verbose[46] = rssi[2];
-    output_verbose[47] = rssi[1];
-    output_verbose[48] = rssi[0];
+	i=0;
 
-    output_verbose[17] = temp_string[0];
-    output_verbose[18] = temp_string[1];
-    output_verbose[19] = temp_string[2];
-    output_verbose[20] = temp_string[3];
-    output_verbose[21] = temp_string[4];
-    output_verbose[22] = temp_string[5];
+	int ID = msg[i++];
+	int Vcc = (msg[i++]<<8) + msg[i++];
+	int T =  (msg[i++]<<8) + msg[i++];
+	int RH =  (msg[i++]<<8) + msg[i++];
+	int A_x =  (msg[i++]<<8) + msg[i++];
+	int A_y =  (msg[i++]<<8) + msg[i++];
+	int A_z =  (msg[i++]<<8) + msg[i++];
+	long P =  ((msg[i++]<<8) + msg[i++])&0xFFFF;
+	P = (P<<8)+msg[i++];
+	int Vpd = (msg[i++]<<8) + msg[i++];
+	char msg_status = msg[i++];
 
-    output_verbose[32] = '0'+(msg[2]/10)%10;
-    output_verbose[34] = '0'+(msg[2]%10);
-    output_verbose[7] = addr[0];
-    output_verbose[8] = addr[1];
-    output_verbose[9] = addr[2];
-    output_verbose[10] = addr[3];
-    output_verbose[54]= '0'+(msg[3]/100)%10;
-    output_verbose[55] = '0'+(msg[3]/10)%10;
-    output_verbose[56] = '0'+(msg[3]%10);
-    output_verbose[57] = '0'+(msg[6]%10);
-    output_verbose[58] = '0'+((tcnt/100)%10);
-    output_verbose[59] = '0'+((tcnt/10)%10);
-  	output_verbose[60] = '0'+(tcnt%10);
-    TXString(output_verbose, sizeof output_verbose );
-  }
-  else
-  {
-    char output_short[] = {"\r\n$ADDR,-XX.XC,V.C,RSI,N#"};
+	// ID
+	if (ID<100)
+	{
+		id_string[0] = ' ';
+	}
+	else
+	{
+		id_string[0] = '0'+((ID/100)%10);
+	}
+	if (ID<10)
+	{
+		id_string[1] = ' ';
+	}
+	else
+	{
+		id_string[1] = '0'+((ID/10)%10);
+	}
+	id_string[2] = '0'+(ID%10);
 
-    output_short[19] = rssi[2];
-    output_short[20] = rssi[1];
-    output_short[21] = rssi[0];
 
-    output_short[8] = temp_string[0];
-    output_short[9] = temp_string[1];
-    output_short[10] = temp_string[2];
-    output_short[11] = temp_string[3];
-    output_short[12] = temp_string[4];
-    output_short[13] = temp_string[5];
+	// Vcc
+	vcc_string[0] = '0'+((Vcc/1000)%10);
+	vcc_string[2] = '0'+((Vcc/100)%10);
+	vcc_string[3] = '0'+((Vcc/10)%10);
+	vcc_string[4] = '0'+(Vcc%10);
 
-    output_short[15] = '0'+(msg[2]/10)%10;
-    output_short[17] = '0'+(msg[2]%10);
-    output_short[3] = addr[0];
-    output_short[4] = addr[1];
-    output_short[5] = addr[2];
-    output_short[6] = addr[3];
+	// T
+	if( T < 0 )
+	{
+		t_string[0] = '-';
+		T = T * -1;
+	}
+	else
+	{
+		t_string[0] = '0'+((T/10000)%10);
+	}
+	t_string[1] = '0'+((T/1000)%10);
+	t_string[2] = '0'+((T/100)%10);
+	t_string[4] = '0'+((T/10)%10);
+	t_string[5] = '0'+(T%10);
 
-    TXString(output_short, sizeof output_short );
-  }
+	// RH
+	rh_string[0] = '0'+((RH/1000)%10);
+	rh_string[1] = '0'+((RH/100)%10);
+	rh_string[3] = '0'+((RH/10)%10);
+	rh_string[4] = '0'+(RH%10);
+
+	// A_x
+	if( A_x < 0 )
+	{
+		A_x = A_x * -1;
+		if (A_x <1000)
+		{
+			acc_x_string[0] = ' ';
+			if (A_x < 100)
+			{
+				acc_x_string[1] = ' ';
+				if (A_x <10)
+				{
+					acc_x_string[2] = ' ';
+					acc_x_string[3] = '-';
+					acc_x_string[4] = '0'+(A_x%10);
+				}
+				else	// if >= 10
+				{
+					acc_x_string[2] = '-';
+					acc_x_string[3] = '0'+((A_x/10)%10);
+					acc_x_string[4] = '0'+(A_x%10);
+				}
+			}
+			else	// if >= 100
+			{
+				acc_x_string[1] = '-';
+				acc_x_string[2] = '0'+((A_x/100)%10);
+				acc_x_string[3] = '0'+((A_x/10)%10);
+				acc_x_string[4] = '0'+(A_x%10);
+			}
+		}
+		else	// if >= 1000
+		{
+			acc_x_string[0] = '-';
+			acc_x_string[1] = '0'+((A_x/1000)%10);
+			acc_x_string[2] = '0'+((A_x/100)%10);
+			acc_x_string[3] = '0'+((A_x/10)%10);
+			acc_x_string[4] = '0'+(A_x%10);
+		}
+	}
+	else	// if >= 000
+	{
+		acc_x_string[0] = ' ';
+		acc_x_string[1] = '0'+((A_x/1000)%10);
+		acc_x_string[2] = '0'+((A_x/100)%10);
+		acc_x_string[3] = '0'+((A_x/10)%10);
+		acc_x_string[4] = '0'+(A_x%10);
+	}
+
+
+	// A_y
+	if( A_y < 0 )
+	{
+		A_y = A_y * -1;
+		if (A_y <1000)
+		{
+			acc_y_string[0] = ' ';
+			if (A_y < 100)
+			{
+				acc_y_string[1] = ' ';
+				if (A_y <10)
+				{
+					acc_y_string[2] = ' ';
+					acc_y_string[3] = '-';
+					acc_y_string[4] = '0'+(A_y%10);
+				}
+				else	// if >= 10
+				{
+					acc_y_string[2] = '-';
+					acc_y_string[3] = '0'+((A_y/10)%10);
+					acc_y_string[4] = '0'+(A_y%10);
+				}
+			}
+			else	// if >= 100
+			{
+				acc_y_string[1] = '-';
+				acc_y_string[2] = '0'+((A_y/100)%10);
+				acc_y_string[3] = '0'+((A_y/10)%10);
+				acc_y_string[4] = '0'+(A_y%10);
+			}
+		}
+		else	// if >= 1000
+		{
+			acc_y_string[0] = '-';
+			acc_y_string[1] = '0'+((A_y/1000)%10);
+			acc_y_string[2] = '0'+((A_y/100)%10);
+			acc_y_string[3] = '0'+((A_y/10)%10);
+			acc_y_string[4] = '0'+(A_y%10);
+		}
+	}
+	else	// if >= 000
+	{
+		acc_y_string[0] = ' ';
+		acc_y_string[1] = '0'+((A_y/1000)%10);
+		acc_y_string[2] = '0'+((A_y/100)%10);
+		acc_y_string[3] = '0'+((A_y/10)%10);
+		acc_y_string[4] = '0'+(A_y%10);
+	}
+
+	// A_z
+	if( A_z < 0 )
+	{
+		A_z = A_z * -1;
+		if (A_z <1000)
+		{
+			acc_z_string[0] = ' ';
+			if (A_z < 100)
+			{
+				acc_z_string[1] = ' ';
+				if (A_z <10)
+				{
+					acc_z_string[2] = ' ';
+					acc_z_string[3] = '-';
+					acc_z_string[4] = '0'+(A_z%10);
+				}
+				else	// if >= 10
+				{
+					acc_z_string[2] = '-';
+					acc_z_string[3] = '0'+((A_z/10)%10);
+					acc_z_string[4] = '0'+(A_z%10);
+				}
+			}
+			else	// if >= 100
+			{
+				acc_z_string[1] = '-';
+				acc_z_string[2] = '0'+((A_z/100)%10);
+				acc_z_string[3] = '0'+((A_z/10)%10);
+				acc_z_string[4] = '0'+(A_z%10);
+			}
+		}
+		else	// if >= 1000
+		{
+			acc_z_string[0] = '-';
+			acc_z_string[1] = '0'+((A_z/1000)%10);
+			acc_z_string[2] = '0'+((A_z/100)%10);
+			acc_z_string[3] = '0'+((A_z/10)%10);
+			acc_z_string[4] = '0'+(A_z%10);
+		}
+	}
+	else	// if >= 000
+	{
+		acc_z_string[0] = ' ';
+		acc_z_string[1] = '0'+((A_z/1000)%10);
+		acc_z_string[2] = '0'+((A_z/100)%10);
+		acc_z_string[3] = '0'+((A_z/10)%10);
+		acc_z_string[4] = '0'+(A_z%10);
+	}
+
+	// P
+	p_string[0] = '0'+((P/100000)%10);
+	p_string[1] = '0'+((P/10000)%10);
+	p_string[2] = '0'+((P/1000)%10);
+	p_string[3] = '0'+((P/100)%10);
+	p_string[5] = '0'+((P/10)%10);
+	p_string[6] = '0'+(P%10);
+
+	// Vpd
+	vpd_string[0] = '0'+((Vpd/1000)%10);
+	vpd_string[1] = '0'+((Vpd/100)%10);
+	vpd_string[2] = '0'+((Vpd/10)%10);
+	vpd_string[3] = '0'+(Vpd%10);
+
+	// Status
+	for (i=8; i>0; i--)
+	{
+		status_string[i-1] = '0' + msg_status%2;
+		msg_status = msg_status/2;
+	}
+
+// CREATE OUTPUT
+	j=0;
+	// ID
+	j += 3;
+	for (i = 0; i<sizeof(id_string)-1; i++)
+	{
+		output[i+j] = id_string[i];
+	}
+	j += i;
+	j += 1;
+	// Vcc=
+	j += 4;
+	for (i = 0; i<sizeof(vcc_string)-1; i++)
+	{
+		output[i+j] = vcc_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// T=
+	j += 2;
+	for (i = 0; i<sizeof(t_string)-1; i++)
+	{
+		output[i+j] = t_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// RH=
+	j += 3;
+	for (i = 0; i<sizeof(rh_string)-1; i++)
+	{
+		output[i+j] = rh_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// Acc_x=
+	j += 6;
+	for (i = 0; i<sizeof(acc_x_string)-1; i++)
+	{
+		output[i+j] = acc_x_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// Acc_y=
+	j += 6;
+	for (i = 0; i<sizeof(acc_y_string)-1; i++)
+	{
+		output[i+j] = acc_y_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// Acc_z=
+	j += 6;
+	for (i = 0; i<sizeof(acc_z_string)-1; i++)
+	{
+		output[i+j] = acc_z_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// P=
+	j += 2;
+	for (i = 0; i<sizeof(p_string)-1; i++)
+	{
+		output[i+j] = p_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// Vpd
+	j += 4;
+	for (i = 0; i<sizeof(vpd_string)-1; i++)
+	{
+		output[i+j] = vpd_string[i];
+	}
+	j += i;
+	j += 1;
+
+	// Status
+	j += 7;
+	for (i = 0; i<sizeof(status_string)-1; i++)
+	{
+		output[i+j] = status_string[i];
+	}
+	j += i;
+	j += 1;
+
+	TXString(output, sizeof output);
+//	TXString(msg, sizeof msg);
+
 }
 
 /*******************************************************************************

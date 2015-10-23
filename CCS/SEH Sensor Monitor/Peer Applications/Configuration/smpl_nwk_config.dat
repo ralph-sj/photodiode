@@ -42,7 +42,7 @@
 --define=MAX_HOPS_FROM_AP=1
 
 #/
---define=MAX_APP_PAYLOAD=10
+--define=MAX_APP_PAYLOAD=20
 
 #/
 --define=DEFAULT_LINK_TOKEN=0x01020304

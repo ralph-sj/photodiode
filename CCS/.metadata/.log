@@ -118,3 +118,263 @@ Compilation terminated.
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-10-23 17:50:41.133
 !MESSAGE Indexed 'photodiode_test' (1 sources, 4 headers) in 0.17 sec: 155 declarations; 200 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for ALT+CTRL+I:
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f9f26a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.include.browser,Open Include Browser,
+		Open an include browser on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f9f26a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9a406d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9a406d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@fbcc02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.opendecl,Open Declaration,
+		Open an editor on the selected element's declaration(s),
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@fbcc02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10ea004,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.opentype,Open Element,
+		Open an element in an Editor,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10ea004,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for F4:
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12b682d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(F4,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.type.hierarchy,Open Type Hierarchy,
+		Open a type hierarchy on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12b682d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c47da0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c47da0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13ae70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.findrefs,References,
+		Search for references to the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13ae70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for ALT+CTRL+H:
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@216422,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(ALT+CTRL+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.call.hierarchy,Open Call Hierarchy,
+		Open the call hierarchy for the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@216422,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-23 20:33:20.495
+!MESSAGE A conflict occurred for CTRL+SHIFT+H:
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@351305,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+SHIFT+H,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.navigate.open.type.in.hierarchy,Open Type in Hierarchy,
+		Open a type in the type hierarchy view,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@351305,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY com.ti.ccstudio.debug 1 0 2015-10-23 20:37:27.847
+!MESSAGE DS_ERROR: MSP430: Error initializing emulator: No USB FET was found
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2015-10-23 20:37:28.257
+!MESSAGE DS_ERROR: Error initializing emulator:
+No USB FET was found
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2015-10-23 20:38:02.579
+!MESSAGE Error loading built-in project symbols: >> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> WARNING: invalid compiler option -- Debug/symbols.txt (ignored)
+>> WARNING: more than one source file is specified; preprocessor output will be generated for last file only
+Fatal error: cannot open source file "S-J/Dropbox/02"
+1 catastrophic error detected in the compilation of "S-J/Dropbox/02".
+Compilation terminated.
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2015-10-23 20:45:00.915
+!MESSAGE DS_ERROR: MSP430: Error initializing emulator: No USB FET was found
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2015-10-23 20:45:01.667
+!MESSAGE DS_ERROR: Error initializing emulator:
+No USB FET was found
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2015-10-23 20:46:06.550
+!MESSAGE Error loading built-in project symbols: >> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> WARNING: invalid compiler option -- Debug/symbols.txt (ignored)
+>> WARNING: more than one source file is specified; preprocessor output will be generated for last file only
+Fatal error: cannot open source file "S-J/Dropbox/02"
+1 catastrophic error detected in the compilation of "S-J/Dropbox/02".
+Compilation terminated.
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-10-23 20:46:06.906
+!MESSAGE Indexed 'SEH Sensor Monitor' (15 sources, 47 headers) in 0.87 sec: 1,267 declarations; 5,120 references; 0 unresolved inclusions; 11 syntax errors; 164 unresolved names (2.50%)
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2015-10-23 20:48:53.961
+!MESSAGE Error loading built-in project symbols: >> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> WARNING: invalid compiler option -- Debug/symbols.txt (ignored)
+>> WARNING: more than one source file is specified; preprocessor output will be generated for last file only
+Fatal error: cannot open source file "S-J/Dropbox/02"
+1 catastrophic error detected in the compilation of "S-J/Dropbox/02".
+Compilation terminated.
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-10-23 20:48:54.394
+!MESSAGE Indexed 'SEH Sensor Monitor' (15 sources, 47 headers) in 0.93 sec: 1,499 declarations; 5,962 references; 0 unresolved inclusions; 13 syntax errors; 162 unresolved names (2.13%)
+!SESSION 2015-10-23 20:57:37.045 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2015-10-23 20:57:51.919
+!MESSAGE Error loading built-in project symbols: >> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> WARNING: invalid compiler option -- Debug/symbols.txt (ignored)
+>> WARNING: more than one source file is specified; preprocessor output will be generated for last file only
+Fatal error: cannot open source file "S-J/Dropbox/02"
+1 catastrophic error detected in the compilation of "S-J/Dropbox/02".
+Compilation terminated.
+
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2015-10-23 21:01:09.035
+!MESSAGE Error loading built-in project symbols: >> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> WARNING: invalid compiler option -- Debug/symbols.txt (ignored)
+>> WARNING: more than one source file is specified; preprocessor output will be generated for last file only
+Fatal error: cannot open source file "S-J/Dropbox/02"
+1 catastrophic error detected in the compilation of "S-J/Dropbox/02".
+Compilation terminated.
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-10-23 21:01:09.627
+!MESSAGE Indexed 'SEH Sensor Monitor' (15 sources, 47 headers) in 1.03 sec: 1,267 declarations; 5,120 references; 0 unresolved inclusions; 11 syntax errors; 164 unresolved names (2.50%)
+
+!ENTRY com.ti.ccstudio.project.core 4 0 2015-10-23 21:10:19.946
+!MESSAGE Error loading built-in project symbols: >> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> ERROR: Cannot open command file 'C:/Users/Ralph': No such file or directory
+>> WARNING: invalid compiler option -- Debug/symbols.txt (ignored)
+>> WARNING: more than one source file is specified; preprocessor output will be generated for last file only
+Fatal error: cannot open source file "S-J/Dropbox/02"
+1 catastrophic error detected in the compilation of "S-J/Dropbox/02".
+Compilation terminated.
+
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-10-23 21:10:20.384
+!MESSAGE Indexed 'SEH Sensor Monitor' (15 sources, 47 headers) in 0.88 sec: 1,499 declarations; 5,968 references; 0 unresolved inclusions; 13 syntax errors; 162 unresolved names (2.12%)
