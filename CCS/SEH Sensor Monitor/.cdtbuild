@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="AP as data hub.com.ti.ccstudio.buildDefinitions.MSP430.executableProjectType.2038148913" name="MSP430 Executable" projectType="com.ti.ccstudio.buildDefinitions.MSP430.executableProjectType">
+<configuration artifactExtension="out" artifactName="APasdatahub" cleanCommand="${CCE_INSTALL_ROOT}/utils/Cygwin/rm -rf" description="" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983" name="End Device - Debug" parent="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.DebugToolchain.1300755551" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.linkerDebug.1935912202">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.2038281031" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="3.1.0" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.978854805" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=MSP430F2274"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=lnk_msp430f2274.cmd"/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts430.lib"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+</option>
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.CMD_FILE.99721581" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.CMD_FILE" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Peer Applications/Configuration/smpl_nwk_config.dat&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/Peer Applications/Configuration/End Device/smpl_config.dat&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.DEFINE.710898413" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="MRFI_CC2500"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.INCLUDE_PATH.888461760" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${MSP430_CG_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/simpliciti/nwk&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/simpliciti/network_applications&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/mrfi&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/bsp/drivers&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/bsp/boards/EZ430RF&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/bsp&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OPT_LEVEL.368653217" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OPT_LEVEL" value="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OPT_LEVEL.0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.PRINTF_SUPPORT.1670804997" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.PRINTF_SUPPORT" value="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.PRINTF_SUPPORT.full" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.linkerDebug.1935912202" name="MSP430 Linker v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.linkerCommandFiles.1107331685" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.linkerCommandFiles" valueType="stringList">
+<listOptionValue builtIn="false" value="../lnk_msp430f2274.cmd"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.LIBRARY.1922739337" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.LIBRARY" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;rts430.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.HEAP_SIZE.930515930" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.HEAP_SIZE" value="80" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.STACK_SIZE.1865802188" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.STACK_SIZE" value="80" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.MAP_FILE.1630221425" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.MAP_FILE" value="" valueType="string"/>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/bsp/bsp.c" name="bsp.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/bsp/bsp.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1580465998">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1580465998" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.58810509" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/bsp&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/mrfi/mrfi.c" name="mrfi.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/mrfi/mrfi.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1627340077">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1627340077" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.420073569" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/mrfi&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk/nwk.c" name="nwk.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1138313001">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1138313001" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.59224885" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk/nwk_QMgmt.c" name="nwk_QMgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.771877212">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.771877212" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.571254595" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk/nwk_api.c" name="nwk_api.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_api.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1831287656">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1831287656" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.2006141328" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk/nwk_frame.c" name="nwk_frame.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_frame.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1311225948">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1311225948" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.2047319403" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk/nwk_globals.c" name="nwk_globals.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_globals.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1814656989">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1814656989" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.601960842" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_freq.c" name="nwk_freq.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1184373976">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1184373976" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1425278758" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_ioctl.c" name="nwk_ioctl.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1770549081">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1770549081" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1490433225" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_join.c" name="nwk_join.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_join.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1125206572">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1125206572" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1305868081" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_link.c" name="nwk_link.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_link.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1586230382">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1586230382" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1581244477" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_mgmt.c" name="nwk_mgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.271942457">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.271942457" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.940648831" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_ping.c" name="nwk_ping.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.127728819">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.127728819" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.213990832" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Components/nwk applications/nwk_security.c" name="nwk_security.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_security.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.572341573">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.572341573" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.904138289" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./AP as data hub/Peer Applications/application/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1657876186">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048.1657876186" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1033908319" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications/application&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/bsp/bsp.c" name="bsp.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/bsp/bsp.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/bsp/bsp.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/bsp/bsp.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.435072207" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/bsp&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/mrfi/mrfi.c" name="mrfi.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/mrfi/mrfi.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/mrfi/mrfi.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/mrfi/mrfi.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.315979542" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/mrfi&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk/nwk.c" name="nwk.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1059551540" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" name="nwk_QMgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.88207582" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk/nwk_api.c" name="nwk_api.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_api.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_api.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_api.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1469982114" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk/nwk_frame.c" name="nwk_frame.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_frame.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_frame.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_frame.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1407285245" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk/nwk_globals.c" name="nwk_globals.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_globals.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_globals.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk/nwk_globals.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.785289005" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" name="nwk_freq.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_freq.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.48871394" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" name="nwk_ioctl.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.712232274" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_join.c" name="nwk_join.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_join.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_join.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_join.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1473813307" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_link.c" name="nwk_link.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_link.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_link.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_link.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.553540132" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" name="nwk_mgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.806560860" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" name="nwk_ping.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_ping.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.554402" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Components/nwk applications/nwk_security.c" name="nwk_security.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_security.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_security.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Components/nwk applications/nwk_security.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.970746356" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.912598624" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications/application&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Applications/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Applications/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Applications/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1127261512" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Peer Applications/Configuration/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/Configuration/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/Configuration/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1919426877" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications/Configuration&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Peer Applications/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.163548564" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c" name="SEH_ED_v1.5.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.174962371" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.281640983./SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c" name="SEH_AP_v1.5.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048./SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.1408765048">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.630403046" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+</configuration>
+<configuration artifactExtension="out" artifactName="APasdatahub" cleanCommand="${CCE_INSTALL_ROOT}/utils/Cygwin/rm -rf" description="" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835" name="Access Point - Debug" parent="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.DebugToolchain.1810290467" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.linkerDebug.1288918383">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1526410965" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="3.1.0" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1345546467" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=MSP430F2274"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=lnk_msp430f2274.cmd"/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=rts430.lib"/>
+<listOptionValue builtIn="false" value="IS_ASSEMBLY_ONLY=false"/>
+</option>
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.CMD_FILE.2029725199" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.CMD_FILE" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/peer applications/Configuration/smpl_nwk_config.dat&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/peer applications/Configuration/Access Point/smpl_config.dat&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.DEFINE.1686682739" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="MRFI_CC2500"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.INCLUDE_PATH.992776290" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${MSP430_CG_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/simpliciti/nwk&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/simpliciti/network_applications&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/mrfi&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/bsp/drivers&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/bsp/boards/EZ430RF&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/../../../../../Components/bsp&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.PRINTF_SUPPORT.603856600" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.PRINTF_SUPPORT" value="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.PRINTF_SUPPORT.full" valueType="enumerated"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.linkerDebug.1288918383" name="MSP430 Linker v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.linkerCommandFiles.1232917997" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.linkerCommandFiles" valueType="stringList">
+<listOptionValue builtIn="false" value="../lnk_msp430f2274.cmd"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.LIBRARY.1300895121" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.LIBRARY" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;rts430.lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.HEAP_SIZE.769366447" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.HEAP_SIZE" value="80" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.STACK_SIZE.1674109552" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.linkerID.STACK_SIZE" value="80" valueType="string"/>
+</tool>
+<macros/>
+</toolChain>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/bsp/bsp.c" name="bsp.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/bsp/bsp.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1330445926">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1330445926" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.644108518" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/bsp&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/mrfi/mrfi.c" name="mrfi.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/mrfi/mrfi.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.27589031">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.27589031" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.998794298" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/mrfi&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk/nwk.c" name="nwk.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.171210912">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.171210912" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.486467411" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk/nwk_QMgmt.c" name="nwk_QMgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1883733146">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1883733146" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.2136249794" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk/nwk_api.c" name="nwk_api.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_api.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1332014901">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1332014901" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.2030413240" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk/nwk_frame.c" name="nwk_frame.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_frame.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1515106697">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1515106697" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1588557098" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk/nwk_globals.c" name="nwk_globals.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_globals.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.989329889">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.989329889" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.918595753" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_freq.c" name="nwk_freq.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.486068327">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.486068327" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.185691922" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_ioctl.c" name="nwk_ioctl.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1169678458">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1169678458" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.958164733" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_join.c" name="nwk_join.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_join.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.197009368">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.197009368" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.698890897" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_link.c" name="nwk_link.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_link.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.858920531">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.858920531" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1056283349" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_mgmt.c" name="nwk_mgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.904302867">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.904302867" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.166988057" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_ping.c" name="nwk_ping.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.479607269">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.479607269" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.906470460" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Components/nwk applications/nwk_security.c" name="nwk_security.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_security.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1347948915">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.1347948915" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.288687853" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./AP as data hub/Peer Applications/application/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.887975200">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338.887975200" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1895230416" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications/application&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/bsp/bsp.c" name="bsp.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/bsp/bsp.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/bsp/bsp.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/bsp/bsp.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1064839453" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/bsp&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/mrfi/mrfi.c" name="mrfi.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/mrfi/mrfi.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/mrfi/mrfi.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/mrfi/mrfi.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.663299450" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/mrfi&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk/nwk.c" name="nwk.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1627071369" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" name="nwk_QMgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_QMgmt.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.243619559" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk/nwk_api.c" name="nwk_api.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_api.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_api.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_api.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1478450058" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk/nwk_frame.c" name="nwk_frame.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_frame.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_frame.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_frame.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1133198190" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk/nwk_globals.c" name="nwk_globals.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk/nwk_globals.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_globals.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk/nwk_globals.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1843626129" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" name="nwk_freq.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_freq.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_freq.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.944595659" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" name="nwk_ioctl.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_ioctl.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.934881002" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_join.c" name="nwk_join.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_join.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_join.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_join.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.438750238" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_link.c" name="nwk_link.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_link.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_link.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_link.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1514296425" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" name="nwk_mgmt.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_mgmt.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.432795244" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" name="nwk_ping.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_ping.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_ping.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1414726210" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Components/nwk applications/nwk_security.c" name="nwk_security.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Components/nwk applications/nwk_security.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_security.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Components/nwk applications/nwk_security.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1474580765" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Components/nwk applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/application/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.325585721" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications/application&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Applications/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Applications/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Applications/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1458075209" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Peer Applications/Configuration/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/Configuration/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/Configuration/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1227911143" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications/Configuration&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Peer Applications/vlo_rand.asm" name="vlo_rand.asm" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/vlo_rand.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/vlo_rand.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/vlo_rand.asm" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1594521658" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c" name="SEH_ED_v1.5.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.1154498819" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.MSP430.exe.debug.1442498835./SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c" name="SEH_AP_v1.5.c" rcbsApplicability="disable" resourcePath="/SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c">
+<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338./SEH Sensor Monitor/Peer Applications/SEH_AP_v1.5.c" name="MSP430 Compiler v3.1" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.exe.compilerDebug.708088338">
+<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY.350446104" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.1.compilerID.OBJ_DIRECTORY" value="&quot;Peer Applications&quot;" valueType="string"/>
+</tool>
+</resourceConfiguration>
+</configuration>
+</project>
+</ManagedProjectBuildInfo>

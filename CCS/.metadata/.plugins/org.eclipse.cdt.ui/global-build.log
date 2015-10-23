@@ -1,0 +1,322 @@
+
+**** Clean-only build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k clean 
+c:/ti/ccsv6/utils/Cygwin/rm -rf  "APasdatahub.out" 
+c:/ti/ccsv6/utils/Cygwin/rm -rf "Peer Applications\SEH_ED_v1.5.pp" "Components\simpliciti\nwk\nwk.pp" "Components\simpliciti\nwk\nwk_QMgmt.pp" "Components\simpliciti\nwk\nwk_api.pp" "Components\simpliciti\nwk\nwk_frame.pp" "Components\simpliciti\nwk\nwk_globals.pp" "Components\simpliciti\network_applications\nwk_freq.pp" "Components\simpliciti\network_applications\nwk_ioctl.pp" "Components\simpliciti\network_applications\nwk_join.pp" "Components\simpliciti\network_applications\nwk_link.pp" "Components\simpliciti\network_applications\nwk_mgmt.pp" "Components\simpliciti\network_applications\nwk_ping.pp" "Components\simpliciti\network_applications\nwk_security.pp" "Components\mrfi\mrfi.pp" "Components\bsp\bsp.pp" 
+c:/ti/ccsv6/utils/Cygwin/rm -rf "Peer Applications\SEH_ED_v1.5.obj" "Peer Applications\vlo_rand.obj" "Components\simpliciti\nwk\nwk.obj" "Components\simpliciti\nwk\nwk_QMgmt.obj" "Components\simpliciti\nwk\nwk_api.obj" "Components\simpliciti\nwk\nwk_frame.obj" "Components\simpliciti\nwk\nwk_globals.obj" "Components\simpliciti\network_applications\nwk_freq.obj" "Components\simpliciti\network_applications\nwk_ioctl.obj" "Components\simpliciti\network_applications\nwk_join.obj" "Components\simpliciti\network_applications\nwk_link.obj" "Components\simpliciti\network_applications\nwk_mgmt.obj" "Components\simpliciti\network_applications\nwk_ping.obj" "Components\simpliciti\network_applications\nwk_security.obj" "Components\mrfi\mrfi.obj" "Components\bsp\bsp.obj" 
+c:/ti/ccsv6/utils/Cygwin/rm -rf "Peer Applications\vlo_rand.pp" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+"../Peer Applications/SEH_ED_v1.5.c", line 175: warning: variable "current_voltage" was declared but never referenced
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building file: ../Peer Applications/vlo_rand.asm'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/vlo_rand.pp" --obj_directory="Peer Applications"  "../Peer Applications/vlo_rand.asm"
+'Finished building: ../Peer Applications/vlo_rand.asm'
+' '
+'Building file: ../Components/simpliciti/nwk/nwk.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/nwk/nwk.pp" --obj_directory="Components/simpliciti/nwk"  "../Components/simpliciti/nwk/nwk.c"
+'Finished building: ../Components/simpliciti/nwk/nwk.c'
+' '
+'Building file: ../Components/simpliciti/nwk/nwk_QMgmt.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/nwk/nwk_QMgmt.pp" --obj_directory="Components/simpliciti/nwk"  "../Components/simpliciti/nwk/nwk_QMgmt.c"
+'Finished building: ../Components/simpliciti/nwk/nwk_QMgmt.c'
+' '
+'Building file: ../Components/simpliciti/nwk/nwk_api.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/nwk/nwk_api.pp" --obj_directory="Components/simpliciti/nwk"  "../Components/simpliciti/nwk/nwk_api.c"
+'Finished building: ../Components/simpliciti/nwk/nwk_api.c'
+' '
+'Building file: ../Components/simpliciti/nwk/nwk_frame.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/nwk/nwk_frame.pp" --obj_directory="Components/simpliciti/nwk"  "../Components/simpliciti/nwk/nwk_frame.c"
+'Finished building: ../Components/simpliciti/nwk/nwk_frame.c'
+' '
+'Building file: ../Components/simpliciti/nwk/nwk_globals.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/nwk/nwk_globals.pp" --obj_directory="Components/simpliciti/nwk"  "../Components/simpliciti/nwk/nwk_globals.c"
+'Finished building: ../Components/simpliciti/nwk/nwk_globals.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_freq.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_freq.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_freq.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_freq.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_ioctl.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_ioctl.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_ioctl.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_ioctl.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_join.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_join.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_join.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_join.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_link.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_link.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_link.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_link.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_mgmt.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_mgmt.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_mgmt.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_mgmt.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_ping.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_ping.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_ping.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_ping.c'
+' '
+'Building file: ../Components/simpliciti/network_applications/nwk_security.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/simpliciti/network_applications/nwk_security.pp" --obj_directory="Components/simpliciti/network_applications"  "../Components/simpliciti/network_applications/nwk_security.c"
+'Finished building: ../Components/simpliciti/network_applications/nwk_security.c'
+' '
+'Building file: ../Components/mrfi/mrfi.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/mrfi/mrfi.pp" --obj_directory="Components/mrfi"  "../Components/mrfi/mrfi.c"
+'Finished building: ../Components/mrfi/mrfi.c'
+' '
+'Building file: ../Components/bsp/bsp.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Components/bsp/bsp.pp" --obj_directory="Components/bsp"  "../Components/bsp/bsp.c"
+'Finished building: ../Components/bsp/bsp.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k clean 
+gmake: *** No rule to make target `clean'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 65: error #20: identifier "Vpd0" is undefined
+"../main.c", line 114: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 120: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 120: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 131: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 147: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+1 error detected in the compilation of "../main.c".
+
+>> Compilation failure
+gmake: *** [main.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 115: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 121: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 121: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 132: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 148: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_test.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_test.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_test_linkInfo.xml" --rom_model -o "photodiode_test.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_test.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 115: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 121: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 121: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 132: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 148: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_test.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_test.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_test_linkInfo.xml" --rom_model -o "photodiode_test.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_test.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 120: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 126: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 126: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 137: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 153: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_test.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_test.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_test_linkInfo.xml" --rom_model -o "photodiode_test.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_test.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 132: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 138: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 149: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 165: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_test.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_test.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_test_linkInfo.xml" --rom_model -o "photodiode_test.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_test.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 132: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 138: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 149: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 165: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_test.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_test.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_test_linkInfo.xml" --rom_model -o "photodiode_test.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_test.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 132: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 138: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 138: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../main.c", line 149: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 165: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_test.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_test.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_test_linkInfo.xml" --rom_model -o "photodiode_test.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_test.out'
+' '
+
+**** Build Finished ****
