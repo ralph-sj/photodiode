@@ -785,7 +785,7 @@ void linkTo(void)
 
 	        Vpd = Read_PD();	// read photodiode voltage (connected to P2.0(-) to P2.2 (+))
 
-			if ( msg_status != 0 )
+//			if ( msg_status != 0 )
 				{
 
 		/* 		int i = 0;
@@ -837,11 +837,11 @@ void linkTo(void)
 			msg_status = 0;
 				}	// end of status if loop
 
-//		    for (i=0 ; i <10  ; i++)
-//			{
-//				   delay(sec30);                  // enter sleep mode between measurements
-//			}
-		    delay(sec2);                  // enter sleep mode between measurements
+		    for (i=0 ; i <2  ; i++)
+			{
+				   delay(sec30);                  // enter sleep mode between measurements
+			}
+//		    delay(sec2);                  // enter sleep mode between measurements
 	}	// end of MEASURE if loop
 
 	  else

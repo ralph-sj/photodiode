@@ -1,0 +1,161 @@
+<!-- 
+24/10/2015
+Display of sensor node with photodiode voltage
+Data from: http://data.sparkfun.com/streams/G2x5VRRgqguX5nmAgnoX
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+	<style>
+	header {
+		background-color:black;
+		color:white;
+		text-align:center;
+		padding:5px;	 
+	}
+	body {
+		background-color:black;
+		color:white;
+	}
+	section {
+    text-align:center
+	text-style:bold
+    padding:10px;
+	}
+	</style>
+
+    <!-- EXTERNAL LIBS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+
+    <!-- EXAMPLE SCRIPT -->
+    <script>
+
+      // onload callback
+      function drawChart1() {
+	 
+        var public_key = 'G2x5VRRgqguX5nmAgnoX';
+
+        // JSONP request
+        var jsonData = $.ajax({
+          url: 'https://data.sparkfun.com/output/' + public_key + '.json',
+          data: {page: 1},
+          dataType: 'jsonp',
+        }).done(function (results) {
+		
+		var v_cc_data = new google.visualization.DataTable();
+	      v_cc_data.addColumn('datetime', 'Time');
+          v_cc_data.addColumn('number', 'Vcc');
+		  $.each(results, function (i, row) {
+            v_cc_data.addRow([
+              (new Date(row.timestamp)),
+			  parseFloat(row.v_cc),
+			]);
+          });
+
+          var temp_data = new google.visualization.DataTable();
+	      temp_data.addColumn('datetime', 'Time');
+          temp_data.addColumn('number', 'Temperature');
+		  temp_data.addColumn('number', 'Humidity');
+		  $.each(results, function (i, row) {
+            temp_data.addRow([
+              (new Date(row.timestamp)),
+              parseFloat(row.temperature),
+			  parseFloat(row.humidity),
+			]);
+          });
+
+ 		  var press_data = new google.visualization.DataTable();
+		  press_data.addColumn('datetime', 'Time');
+          press_data.addColumn('number', 'Pressure');
+		  $.each(results, function (i, row) {
+            press_data.addRow([
+              (new Date(row.timestamp)),
+              parseFloat(row.pressure),
+			  ]);
+          });  
+		  
+          var acc_data = new google.visualization.DataTable();
+	      acc_data.addColumn('datetime', 'Time');
+          acc_data.addColumn('number', 'X');
+          acc_data.addColumn('number', 'Y');
+          acc_data.addColumn('number', 'Z');
+		  $.each(results, function (i, row) {
+            acc_data.addRow([
+              (new Date(row.timestamp)),
+				parseFloat(row.acceleration_x),
+//			  if (row.acceleration_x >= 0)
+//			  {
+				parseFloat(row.acceleration_y),
+				parseFloat(row.acceleration_z),
+//			  }
+//			  else
+//			  {
+//				parseFloat(row.acceleration_x),
+//				parseFloat(row.acceleration_y),
+//				parseFloat(row.acceleration_z),			  
+//			  }
+			]);
+          });
+
+		  // Vpd
+		var v_pd_data = new google.visualization.DataTable();
+	      v_pd_data.addColumn('datetime', 'Time');
+          v_pd_data.addColumn('number', 'Vpd');
+		  $.each(results, function (i, row) {
+            v_pd_data.addRow([
+              (new Date(row.timestamp)),
+			  parseFloat(row.v_pd),
+			]);
+          });	
+		  
+		  // OPTIONS
+   		 var v_cc_options = {'title':'Battery voltage'};
+		 var temp_options = {'title':'Temperature'};
+		 var press_options = {'title':'Atmospheric pressure (mbar)'};
+		 var acc_options = {'title':'Acceleration (X,Y,Z axes)'};
+		 var v_pd_options = {'title':'Photodiode voltage'};
+
+		//CHART
+          var v_cc_chart = new google.visualization.LineChart($('#v_cc_chart').get(0));
+          var temp_chart = new google.visualization.LineChart($('#temp_chart').get(0));
+		  var press_chart = new google.visualization.LineChart($('#press_chart').get(0));
+		  var acc_chart = new google.visualization.LineChart($('#acc_chart').get(0));
+          var v_pd_chart = new google.visualization.LineChart($('#v_pd_chart').get(0));
+		  
+		  // DRAW CHART
+         v_cc_chart.draw(v_cc_data,v_cc_options);
+         temp_chart.draw(temp_data,temp_options);
+		  press_chart.draw(press_data,press_options);
+		  acc_chart.draw(acc_data,acc_options);
+         v_pd_chart.draw(v_pd_data,v_pd_options);
+
+        });
+      }
+
+      // load chart lib
+      google.load('visualization', '1', {
+        packages: ['corechart']
+      });
+
+      // call drawChart1 once google charts is loaded
+      google.setOnLoadCallback(drawChart1);
+	  
+//	  setTimeout(function(){
+//	window.location.reload(1);
+//	}, 10000);
+	  
+    </script>
+	
+  </head>
+  <body>
+  <header>
+	<h1>NODE 1</h1>
+	</header>
+    <div id="v_cc_chart" style="width: 100%;"></div>
+    <div id="temp_chart" style="width: 100%;"></div>
+    <div id="press_chart" style="width: 100%;"></div>
+	<div id="acc_chart" style="width: 100%;"></div>
+    <div id="v_pd_chart" style="width: 100%;"></div>
+  </body>
+</html>

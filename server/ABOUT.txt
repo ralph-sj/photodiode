@@ -1,0 +1,6 @@
+24/10/2015
+Photodiode
+Public URL: http://data.sparkfun.com/streams/G2x5VRRgqguX5nmAgnoX
+Public Key: G2x5VRRgqguX5nmAgnoX
+Private Key: NWr9Mppq4quwRvaxevMw
+Delete Key: w36lqxxOMOHXrR1ZvR5X
