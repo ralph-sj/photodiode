@@ -1,0 +1,44 @@
+﻿Dev board folder and image of dev boad added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   .gitignore
+#	modified:   CCS/.metadata/.log
+#	modified:   CCS/.metadata/.plugins/com.ti.ccstudio.project.ui/dialog_settings.xml
+#	modified:   CCS/.metadata/.plugins/com.ti.dvt.datamodel/SolutionMgr.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.cdt.core/.log
+#	modified:   CCS/.metadata/.plugins/org.eclipse.cdt.core/SEH Sensor Monitor.1445617678649.pdom
+#	modified:   CCS/.metadata/.plugins/org.eclipse.cdt.ui/global-build.log
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/.indexes/21/history.index
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/.indexes/cc/history.index
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/.indexes/db/history.index
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/.markers
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/com.ti.ccstudio.project.core/Access Point - Debug/advice.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/com.ti.ccstudio.project.core/Access Point - Debug/benchmarks.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/com.ti.ccstudio.project.core/End Device - Debug/advice.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/SEH Sensor Monitor/com.ti.ccstudio.project.core/End Device - Debug/benchmarks.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/photodiode_test/.indexes/33/history.index
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/photodiode_test/.markers
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/photodiode_test/com.ti.ccstudio.project.core/Debug/advice.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/photodiode_test/com.ti.ccstudio.project.core/Debug/benchmarks.xml
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.projects/photodiode_test/com.ti.ccstudio.project.core/Debug/symbols.txt
+#	deleted:    CCS/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.managedbuilder.core.prefs
+#	modified:   CCS/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs
+#	modified:   CCS/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+#	modified:   CCS/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
+#	modified:   CCS/SEH Sensor Monitor/End Device - Debug/APasdatahub.out
+#	modified:   CCS/SEH Sensor Monitor/End Device - Debug/APasdatahub_linkInfo.xml
+#	modified:   CCS/SEH Sensor Monitor/Peer Applications/SEH_ED_v1.5.c
+#	new file:   hardware/dev_board/photodiode_dev_board.jpg
+#	new file:   hardware/dev_board/photodiode_dev_board.png
+#	new file:   hardware/photodiode_dev_board.svg
+#	new file:   pi/python/data-post.py
+#	new file:   server/ABOUT.txt
+#	new file:   server/sensor_node_plot-1.html
+#
+

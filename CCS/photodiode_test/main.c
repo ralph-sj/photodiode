@@ -56,6 +56,12 @@ unsigned int Vpd;
 unsigned int Read_PD(void);	// read photodiode voltage (connected to P2.?)
 unsigned int Read_PD1(void);	// read photodiode voltage (connected to P2.?)
 
+void USCI_A_Init(void);		// initialise USCI for tx'ing data to COM port
+void TXString( char* string, int length );
+void TXData(unsigned int data);
+
+
+
 
 /*
  * main.c
@@ -63,12 +69,29 @@ unsigned int Read_PD1(void);	// read photodiode voltage (connected to P2.?)
 void main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 
+    if( CALBC1_1MHZ == 0xFF && CALDCO_1MHZ == 0xFF )// Do not run if cal values
+     {
+       while(1)
+       {
+         __delay_cycles(65000);
+       }
+     }
+
+    BCSCTL1 = CALBC1_1MHZ;                    // Set DCO = 1MHz
+    DCOCTL = CALDCO_1MHZ;
+
+
     Set_TimerB();
+    USCI_A_Init();
 
     while(1)
     {
         Vpd = Read_PD();	// read photodiode voltage (connected to P2.0(-) to P2.2 (+))
-        delay(sec2);
+
+        TXString("\r\nVpd=",6);
+        TXData(Vpd);
+
+ //       delay(sec2);
     }
 }
 
@@ -279,4 +302,39 @@ unsigned int Read_PD1(void)	// read photodiode voltage (connected to OA1I0 P2.3 
 }
 
 
+void USCI_A_Init(void)		// initialise USCI for tx'ing data to COM port
+{
+	  BCSCTL1 = CALBC1_1MHZ;                    // Set DCO
+	  DCOCTL = CALDCO_1MHZ;
 
+	  P3SEL |= 0x30;                            // P3.4,5 = USCI_A0 TXD/RXD
+	  UCA0CTL1 = UCSSEL_2;                      // SMCLK
+	  UCA0BR0 = 0x68;                           // 9600 from 1Mhz
+	  UCA0BR1 = 0x0;
+	  UCA0MCTL = UCBRS_2;
+	  UCA0CTL1 &= ~UCSWRST;                     // **Initialize USCI state machine**
+	  IE2 |= UCA0RXIE;                          // Enable USCI_A0 RX interrupt
+}
+
+void TXString( char* string, int length )
+{
+  int pointer;
+  for( pointer = 0; pointer < length; pointer++)
+  {
+    //volatile int i;
+    UCA0TXBUF = string[pointer];
+    while (!(IFG2&UCA0TXIFG));              // USCI_A0 TX buffer ready?
+  }
+}
+
+void TXData(unsigned int data)
+{
+	char DataString[] = {"XXXX"};	// to hold integer from 0-9999
+
+	DataString[0] = '0' + (data/1000)%10;
+	DataString[1] = '0' + (data/100)%100;
+	DataString[2] = '0' + (data/10)%10;
+	DataString[3] = '0' + data%10;
+
+	TXString(DataString,sizeof(DataString));
+}
