@@ -19,8 +19,8 @@ import serial
 server = "data.sparkfun.com" # base URL of your feed
 publicKey1 = "G2x5VRRgqguX5nmAgnoX" # public key1, everyone can see this
 privateKey1 = "NWr9Mppq4quwRvaxevMw"  # private key1, only you should know
-publicKey2 = "8dxAKN9l8JUKJlZrpQg6" # public key2, everyone can see this
-privateKey2 = "pzrWZbnDg7cMe24jXk10"  # private key2, only you should know
+publicKey2 = "wpoMQGZGQduWrAyGMK82" # public key2, everyone can see this
+privateKey2 = "wzKGwVBVw2swzYo2vM4y"  # private key2, only you should know
 fields = ["id","v_cc","temperature", "humidity", "acceleration_x", "acceleration_y", "acceleration_z", "pressure", "v_pd", "status"] # Your feed's data fields
 
 ######################
@@ -98,7 +98,7 @@ try:
 	headers["Content-Type"] = "application/x-www-form-urlencoded"
 	headers["Connection"] = "close"
 	headers["Content-Length"] = len(params) # length of data
-	if inputdata[0] == "1.0":
+	if inputdata[0] == "0.01":
 		headers["Phant-Private-Key"] = privateKey1 # private key header1
 		# Now we initiate a connection, and post the data
 		c = httplib.HTTPConnection(server)
@@ -107,7 +107,7 @@ try:
 		# and include both our data (params) and headers
 		c.request("POST", "/input/" + publicKey1 + ".txt", params, headers)
 
-	if inputdata[0] == "2.0":
+	if inputdata[0] == "0.02":
 		headers["Phant-Private-Key"] = privateKey2 # private key header2
 		# Now we initiate a connection, and post the data
 		c = httplib.HTTPConnection(server)
