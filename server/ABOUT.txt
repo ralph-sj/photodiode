@@ -1,6 +1,15 @@
 24/10/2015
 Photodiode
+Node 1
 Public URL: http://data.sparkfun.com/streams/G2x5VRRgqguX5nmAgnoX
 Public Key: G2x5VRRgqguX5nmAgnoX
 Private Key: NWr9Mppq4quwRvaxevMw
 Delete Key: w36lqxxOMOHXrR1ZvR5X
+
+30/10/2015
+Node 2
+Public URL: http://data.sparkfun.com/streams/wpoMQGZGQduWrAyGMK82
+Public Key: wpoMQGZGQduWrAyGMK82
+Private Key: wzKGwVBVw2swzYo2vM4y
+Delete Key: MvJzBX7XBxUpYEXkGQMr
+
