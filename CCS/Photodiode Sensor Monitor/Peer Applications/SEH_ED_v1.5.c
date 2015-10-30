@@ -14,6 +14,7 @@
 #include "msp430x22x4.h"
 #include "vlo_rand.h"
 
+#define TEST	0	// set to non-zero for testing
 #define WakeupPeriod      15000             // ~10 sec (=15000/(12000/8))
 #define a_d_wakeup_time   15000              // ~30 sec
 #define TXPeriod          7500              // ~5 sec  (=7500/(12000/8))
@@ -89,7 +90,7 @@ void check_bat_full(void);
 void createRandomAddress(void);
 
 #define MESSAGE_LENGTH		19	// must be less than or equal to MAX_APP_PAYLOAD	//5
-#define ID	0x01				// NODE ID - MUST BE SEPERATE FOR EVERY NODE USED
+#define NODE_ID	0x02				// NODE ID - MUST BE SEPERATE FOR EVERY NODE USED
 
 #define	YES	1
 #define	NO	0
@@ -658,7 +659,10 @@ void linkTo(void)
 
 	msg_status |= START_FLAG;
 
-	delay(sec10);                  // enter sleep mode to ensure battery is replenished
+	if (TEST ==0 )
+	{
+		delay(sec10);                  // enter sleep mode to ensure battery is replenished
+	}
 
 
 	//create message
@@ -795,7 +799,7 @@ void linkTo(void)
 				} */
 
 				i=0;
-				msg[i++] = ID;		// ID of node
+				msg[i++] = NODE_ID;		// ID of node
 				msg[i++] = (Vcc>>8)&0xFF;
 				msg[i++] = Vcc&0xFF;
 				msg[i++] = (Temperature>>8)&0xFF;
@@ -836,12 +840,19 @@ void linkTo(void)
 		 //   status_indicator(status_one, 2);	// Blink Green LED if success.
 			msg_status = 0;
 				}	// end of status if loop
+				if (TEST)
+				{
+					delay(sec2);                  // enter sleep mode between measurements
 
-		    for (i=0 ; i <2  ; i++)
-			{
-				   delay(sec30);                  // enter sleep mode between measurements
-			}
-//		    delay(sec2);                  // enter sleep mode between measurements
+				}
+				else
+				{
+				    for (i=0 ; i < 10  ; i++)
+					{
+						   delay(sec30);                  // enter sleep mode between measurements
+					}
+				}
+
 	}	// end of MEASURE if loop
 
 	  else
@@ -2039,7 +2050,7 @@ __interrupt void USCIAB0TX_ISR(void)
  	unsigned int ADC_Read;
      // Measure PD Voltage
      ADC10CTL1 = INCH;                    // read input channel
-     ADC10CTL0 = SREF_1 + ADC10SHT_3 + REFON + ADC10ON + ADC10IE + REF2_5V;
+     ADC10CTL0 = SREF_1 + ADC10SHT_3 + REFON + ADC10ON + ADC10IE;	//
      __delay_cycles(350);                    // delay to allow reference to settle
      ADC10CTL0 |= ENC + ADC10SC;             // Sampling and conversion start
      __bis_SR_register(LPM0_bits + GIE);     // LPM0 with interrupts enabled

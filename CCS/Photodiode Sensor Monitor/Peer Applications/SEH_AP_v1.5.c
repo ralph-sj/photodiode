@@ -215,11 +215,11 @@ void transmitData(int addr, signed char rssi,  char msg[MESSAGE_LENGTH] )
 void transmitDataString(char addr[4],char rssi[3], char msg[MESSAGE_LENGTH] )
 {
 
-	char output[] = {"ID=XXX.X,Vcc=X.XXX,T=XXX.XX,RH=XX.XX,Acc_x=XXXXX.XX,Acc_y=XXXXX.XX,Acc_z=XXXXX.XX,P=XXXX.XX,Vpd=XXXX.X,status=XXXXXXXX.X\r\n"};
+	char output[] = {"ID=X.XX,Vcc=X.XXX,T=XXX.XX,RH=XX.XX,Acc_x=XXXXX.XX,Acc_y=XXXXX.XX,Acc_z=XXXXX.XX,P=XXXX.XX,Vpd=XXXX.X,status=XXXXXXXX.X\r\n"};
 	//				  0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
 	//				  0         1         2         3         4         5         6         7         8         1         2         3         4
 
-	char id_string[] = {"YYY.0"};		// add '0' so that python can read it (for some reason only reads floats, not ints)
+	char id_string[] = {"Y.YY"};		// add '0' so that python can read it (for some reason only reads floats, not ints)
 	char vcc_string[] = {"Y.YYY"};
 	char t_string[] = {"YYY.YY"};
 	char rh_string[] = {"YY.YY"};
@@ -233,7 +233,7 @@ void transmitDataString(char addr[4],char rssi[3], char msg[MESSAGE_LENGTH] )
 
 	i=0;
 
-	int ID = msg[i++];
+	int NODE_ID = msg[i++];
 	int Vcc = (msg[i++]<<8) + msg[i++];
 	int T =  (msg[i++]<<8) + msg[i++];
 	int RH =  (msg[i++]<<8) + msg[i++];
@@ -246,23 +246,23 @@ void transmitDataString(char addr[4],char rssi[3], char msg[MESSAGE_LENGTH] )
 	char msg_status = msg[i++];
 
 	// ID
-	if (ID<100)
-	{
-		id_string[0] = ' ';
-	}
-	else
-	{
-		id_string[0] = '0'+((ID/100)%10);
-	}
-	if (ID<10)
-	{
-		id_string[1] = ' ';
-	}
-	else
-	{
-		id_string[1] = '0'+((ID/10)%10);
-	}
-	id_string[2] = '0'+(ID%10);
+//	if (NODE_ID<100)
+//	{
+//		id_string[0] = ' ';
+//	}
+//	else
+//	{
+		id_string[0] = '0'+((NODE_ID/100)%10);
+//	}
+//	if (NODE_ID<10)
+//	{
+//		id_string[2] = ' ';
+//	}
+//	else
+//	{
+		id_string[2] = '0'+((NODE_ID/10)%10);
+//	}
+	id_string[3] = '0'+(NODE_ID%10);
 
 
 	// Vcc
@@ -463,7 +463,7 @@ void transmitDataString(char addr[4],char rssi[3], char msg[MESSAGE_LENGTH] )
 
 // CREATE OUTPUT
 	j=0;
-	// ID
+	// NODE_ID
 	j += 3;
 	for (i = 0; i<sizeof(id_string)-1; i++)
 	{

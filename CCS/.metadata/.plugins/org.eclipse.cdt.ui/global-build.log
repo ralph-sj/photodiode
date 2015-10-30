@@ -1522,3 +1522,521 @@ remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recomm
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project photodoido_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k clean 
+gmake: *** No rule to make target `clean'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodoido_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 33: warning #112-D: statement is unreachable
+"../main.c", line 21: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 31: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodoido_calibrate.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodoido_calibrate.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodoido_calibrate_linkInfo.xml" --rom_model -o "photodoido_calibrate.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changes using LPMx or _bis_SR_register() or __low_power_mode_x() in this project.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodoido_calibrate.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodoido_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 21: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 31: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodoido_calibrate.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodoido_calibrate.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodoido_calibrate_linkInfo.xml" --rom_model -o "photodoido_calibrate.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changes using LPMx or _bis_SR_register() or __low_power_mode_x() in this project.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodoido_calibrate.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodoido_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project SEH Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodoido_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building target: photodiode_calibrate.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_calibrate.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_calibrate_linkInfo.xml" --rom_model -o "photodiode_calibrate.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changes using LPMx or _bis_SR_register() or __low_power_mode_x() in this project.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_calibrate.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 23: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 33: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+'Finished building: ../main.c'
+' '
+'Building target: photodiode_calibrate.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" -vmsp --abi=eabi --advice:power=all -g --define=__MSP430F2274__ --diag_warning=225 --display_error_number --diag_wrap=off --printf_support=minimal -z -m"photodiode_calibrate.map" --heap_size=80 --stack_size=80 -i"c:/ti/ccsv6/ccs_base/msp430/include" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="photodiode_calibrate_linkInfo.xml" --rom_model -o "photodiode_calibrate.out"  "./main.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changes using LPMx or _bis_SR_register() or __low_power_mode_x() in this project.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: photodiode_calibrate.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Access Point - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_AP_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_AP_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_AP_v1.5.c"
+'Finished building: ../Peer Applications/SEH_AP_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_AP_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Access Point - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_AP_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_AP_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_AP_v1.5.c"
+'Finished building: ../Peer Applications/SEH_AP_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_AP_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Access Point - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_AP_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_AP_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_AP_v1.5.c"
+'Finished building: ../Peer Applications/SEH_AP_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_AP_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration End Device - Debug for project Photodiode Sensor Monitor ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../Peer Applications/SEH_ED_v1.5.c'
+'Invoking: MSP430 Compiler'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --include_path="c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" --include_path="c:/ti/ccsv6/ccs_base/msp430/include" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/nwk" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/simpliciti/network_applications" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/mrfi" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/drivers" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp/boards/EZ430RF" --include_path="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Components/bsp" --define=MRFI_CC2500 --printf_support=full --preproc_with_compile --preproc_dependency="Peer Applications/SEH_ED_v1.5.pp" --obj_directory="Peer Applications"  "../Peer Applications/SEH_ED_v1.5.c"
+'Finished building: ../Peer Applications/SEH_ED_v1.5.c'
+' '
+'Building target: APasdatahub.out'
+'Invoking: MSP430 Linker'
+"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/Peer Applications/Configuration/End Device/smpl_config.dat"  -vmsp -O0 -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out"  "./Peer Applications/SEH_ED_v1.5.obj" "./Peer Applications/vlo_rand.obj" "./Components/simpliciti/nwk/nwk.obj" "./Components/simpliciti/nwk/nwk_QMgmt.obj" "./Components/simpliciti/nwk/nwk_api.obj" "./Components/simpliciti/nwk/nwk_frame.obj" "./Components/simpliciti/nwk/nwk_globals.obj" "./Components/simpliciti/network_applications/nwk_freq.obj" "./Components/simpliciti/network_applications/nwk_ioctl.obj" "./Components/simpliciti/network_applications/nwk_join.obj" "./Components/simpliciti/network_applications/nwk_link.obj" "./Components/simpliciti/network_applications/nwk_mgmt.obj" "./Components/simpliciti/network_applications/nwk_ping.obj" "./Components/simpliciti/network_applications/nwk_security.obj" "./Components/mrfi/mrfi.obj" "./Components/bsp/bsp.obj" "../lnk_msp430f2274.cmd" -l"libc.a" 
+<Linking>
+"../lnk_msp430f2274.cmd", line 231: warning: Linker command file has no
+   sections of type=VECT_INIT, but does contain .intXX sections.  This file may
+   be out of date.  Generating interrupt pointers for all .intXX sections.  The
+   default handler provided in the RTS will be used if no other handler is
+   found.  It is recommend that you update your linker command file to the
+   latest version.
+'Finished building target: APasdatahub.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_calibrate ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project photodiode_test ****
+
+"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****

@@ -146,7 +146,7 @@ all: APasdatahub.out
 APasdatahub.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/sensor_monitor/photodiode/CCS/SEH Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out" $(ORDERED_OBJS)
+	"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/bin/cl430" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/smpl_nwk_config.dat" --cmd_file="C:/Users/Ralph S-J/Dropbox/02 UNIVERSITY/02 Technical/03 sensor_monitor/photodiode/CCS/Photodiode Sensor Monitor/peer applications/Configuration/Access Point/smpl_config.dat"  -vmsp -g --define=MRFI_CC2500 --printf_support=full -z --stack_size=80 --heap_size=80 -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/lib" -i"c:/ti/ccsv6/tools/compiler/msp430_4.3.5/include" -i"c:/ti/ccsv6/ccs_base/msp430/include" --reread_libs --warn_sections --xml_link_info="APasdatahub_linkInfo.xml" --rom_model -o "APasdatahub.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

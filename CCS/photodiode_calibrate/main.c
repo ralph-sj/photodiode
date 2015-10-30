@@ -1,6 +1,8 @@
 #include <msp430.h> 
 /*
  * main.c
+ * Created 27/10/2015
+ * AIM: to use op-amp as TI amplifier to test calibration against solar cell.
  */
 
 
@@ -31,8 +33,6 @@ void main(void) {
     while (1){}		// infinite loop
 
 }
-
-
 
 /*
  * OA_Func_Set.c
